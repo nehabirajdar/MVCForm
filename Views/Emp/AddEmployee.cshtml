@@ -1,0 +1,95 @@
+﻿@model MVCForm.Models.Employee
+@{
+    ViewData["Title"] = "AddEmployee";
+}
+
+<h1>Add Employee</h1>
+<form asp-action="AddEmployee">
+    <table>
+        <tr>
+            <td>
+                <label asp-for="Id"></label>
+            </td>
+            <td>
+                <input type="text" asp-for="Id" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.Id)
+                </small>
+            </td>
+           
+        </tr>
+          <tr>
+            <td>
+                <label asp-for="Name"></label>
+            </td>
+            <td>
+                <input type="text" asp-for="Name" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.Name)
+                </small>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="age"></label>
+            </td>
+            <td>
+                <input type="text" asp-for="age" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.age)
+                </small>
+            </td>
+
+        </tr>
+        <tr>
+    <td>
+                <label asp-for="Email"></label>
+            </td>
+            <td>
+                <input type="text" asp-for="Email" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.Email)
+                </small>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="DOJ "></label>
+            </td>
+            <td>
+                <input type="text" asp-for="DOJ" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.DOJ)
+                </small>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Salary "></label>
+            </td>
+            <td>
+                <input type="text" asp-for="Salary" />
+                <small>
+                    @Html.ValidationMessageFor(model=>model.Salary)
+                </small>
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Add" class="btn-btn-primary" />
+            </td>
+        </tr>
+
+
+
+        
+    </table>
+
+</form>
+
+               
